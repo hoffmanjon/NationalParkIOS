@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		733570652A7C1403006CE3F2 /* NationalParksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733570642A7C1403006CE3F2 /* NationalParksApp.swift */; };
+		733570672A7C1403006CE3F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733570662A7C1403006CE3F2 /* ContentView.swift */; };
+		733570692A7C1405006CE3F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 733570682A7C1405006CE3F2 /* Assets.xcassets */; };
+		7335706C2A7C1405006CE3F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7335706B2A7C1405006CE3F2 /* Preview Assets.xcassets */; };
+		733570762A7C1405006CE3F2 /* NationalParksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733570752A7C1405006CE3F2 /* NationalParksTests.swift */; };
+		733570802A7C1405006CE3F2 /* NationalParksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335707F2A7C1405006CE3F2 /* NationalParksUITests.swift */; };
+		733570822A7C1405006CE3F2 /* NationalParksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733570812A7C1405006CE3F2 /* NationalParksUITestsLaunchTests.swift */; };
+		733570932A7C15AE006CE3F2 /* ParkService_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733570922A7C15AE006CE3F2 /* ParkService_API.swift */; };
+		733570992A7D2CA7006CE3F2 /* ParkService_APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733570982A7D2CA7006CE3F2 /* ParkService_APICalls.swift */; };
+		7335709B2A814818006CE3F2 /* ParkService_ParkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335709A2A814818006CE3F2 /* ParkService_ParkData.swift */; };
+		7335709E2A83BAC4006CE3F2 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7335709D2A83BAC4006CE3F2 /* CachedAsyncImage */; };
+		733570A22A83DCE8006CE3F2 /* ParkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733570A12A83DCE8006CE3F2 /* ParkRow.swift */; };
+		733570A42A83FB66006CE3F2 /* ParkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733570A32A83FB66006CE3F2 /* ParkDetails.swift */; };
+		733570A72A852E44006CE3F2 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 733570A62A852E44006CE3F2 /* PopupView */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		733570722A7C1405006CE3F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 733570592A7C1403006CE3F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 733570602A7C1403006CE3F2;
+			remoteInfo = NationalParks;
+		};
+		7335707C2A7C1405006CE3F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 733570592A7C1403006CE3F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 733570602A7C1403006CE3F2;
+			remoteInfo = NationalParks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		733570612A7C1403006CE3F2 /* NationalParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		733570642A7C1403006CE3F2 /* NationalParksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksApp.swift; sourceTree = "<group>"; };
+		733570662A7C1403006CE3F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		733570682A7C1405006CE3F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7335706B2A7C1405006CE3F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		733570712A7C1405006CE3F2 /* NationalParksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NationalParksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		733570752A7C1405006CE3F2 /* NationalParksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksTests.swift; sourceTree = "<group>"; };
+		7335707B2A7C1405006CE3F2 /* NationalParksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NationalParksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7335707F2A7C1405006CE3F2 /* NationalParksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksUITests.swift; sourceTree = "<group>"; };
+		733570812A7C1405006CE3F2 /* NationalParksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		733570922A7C15AE006CE3F2 /* ParkService_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkService_API.swift; sourceTree = "<group>"; };
+		733570982A7D2CA7006CE3F2 /* ParkService_APICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkService_APICalls.swift; sourceTree = "<group>"; };
+		7335709A2A814818006CE3F2 /* ParkService_ParkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkService_ParkData.swift; sourceTree = "<group>"; };
+		733570A12A83DCE8006CE3F2 /* ParkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkRow.swift; sourceTree = "<group>"; };
+		733570A32A83FB66006CE3F2 /* ParkDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetails.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7335705E2A7C1403006CE3F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733570A72A852E44006CE3F2 /* PopupView in Frameworks */,
+				7335709E2A83BAC4006CE3F2 /* CachedAsyncImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7335706E2A7C1405006CE3F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		733570782A7C1405006CE3F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		733570582A7C1403006CE3F2 = {
+			isa = PBXGroup;
+			children = (
+				733570632A7C1403006CE3F2 /* NationalParks */,
+				733570742A7C1405006CE3F2 /* NationalParksTests */,
+				7335707E2A7C1405006CE3F2 /* NationalParksUITests */,
+				733570622A7C1403006CE3F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		733570622A7C1403006CE3F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				733570612A7C1403006CE3F2 /* NationalParks.app */,
+				733570712A7C1405006CE3F2 /* NationalParksTests.xctest */,
+				7335707B2A7C1405006CE3F2 /* NationalParksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		733570632A7C1403006CE3F2 /* NationalParks */ = {
+			isa = PBXGroup;
+			children = (
+				733570A02A83DBBB006CE3F2 /* ParkService_SubViews */,
+				7335709F2A83DBB0006CE3F2 /* ParkService_Views */,
+				733570912A7C158E006CE3F2 /* ParkService_Model */,
+				733570642A7C1403006CE3F2 /* NationalParksApp.swift */,
+				733570662A7C1403006CE3F2 /* ContentView.swift */,
+				733570682A7C1405006CE3F2 /* Assets.xcassets */,
+				7335706A2A7C1405006CE3F2 /* Preview Content */,
+			);
+			path = NationalParks;
+			sourceTree = "<group>";
+		};
+		7335706A2A7C1405006CE3F2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7335706B2A7C1405006CE3F2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		733570742A7C1405006CE3F2 /* NationalParksTests */ = {
+			isa = PBXGroup;
+			children = (
+				733570752A7C1405006CE3F2 /* NationalParksTests.swift */,
+			);
+			path = NationalParksTests;
+			sourceTree = "<group>";
+		};
+		7335707E2A7C1405006CE3F2 /* NationalParksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7335707F2A7C1405006CE3F2 /* NationalParksUITests.swift */,
+				733570812A7C1405006CE3F2 /* NationalParksUITestsLaunchTests.swift */,
+			);
+			path = NationalParksUITests;
+			sourceTree = "<group>";
+		};
+		733570912A7C158E006CE3F2 /* ParkService_Model */ = {
+			isa = PBXGroup;
+			children = (
+				733570922A7C15AE006CE3F2 /* ParkService_API.swift */,
+				733570982A7D2CA7006CE3F2 /* ParkService_APICalls.swift */,
+				7335709A2A814818006CE3F2 /* ParkService_ParkData.swift */,
+			);
+			path = ParkService_Model;
+			sourceTree = "<group>";
+		};
+		7335709F2A83DBB0006CE3F2 /* ParkService_Views */ = {
+			isa = PBXGroup;
+			children = (
+				733570A32A83FB66006CE3F2 /* ParkDetails.swift */,
+			);
+			path = ParkService_Views;
+			sourceTree = "<group>";
+		};
+		733570A02A83DBBB006CE3F2 /* ParkService_SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				733570A12A83DCE8006CE3F2 /* ParkRow.swift */,
+			);
+			path = ParkService_SubViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		733570602A7C1403006CE3F2 /* NationalParks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 733570852A7C1405006CE3F2 /* Build configuration list for PBXNativeTarget "NationalParks" */;
+			buildPhases = (
+				7335705D2A7C1403006CE3F2 /* Sources */,
+				7335705E2A7C1403006CE3F2 /* Frameworks */,
+				7335705F2A7C1403006CE3F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NationalParks;
+			packageProductDependencies = (
+				7335709D2A83BAC4006CE3F2 /* CachedAsyncImage */,
+				733570A62A852E44006CE3F2 /* PopupView */,
+			);
+			productName = NationalParks;
+			productReference = 733570612A7C1403006CE3F2 /* NationalParks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		733570702A7C1405006CE3F2 /* NationalParksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 733570882A7C1405006CE3F2 /* Build configuration list for PBXNativeTarget "NationalParksTests" */;
+			buildPhases = (
+				7335706D2A7C1405006CE3F2 /* Sources */,
+				7335706E2A7C1405006CE3F2 /* Frameworks */,
+				7335706F2A7C1405006CE3F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				733570732A7C1405006CE3F2 /* PBXTargetDependency */,
+			);
+			name = NationalParksTests;
+			productName = NationalParksTests;
+			productReference = 733570712A7C1405006CE3F2 /* NationalParksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7335707A2A7C1405006CE3F2 /* NationalParksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7335708B2A7C1405006CE3F2 /* Build configuration list for PBXNativeTarget "NationalParksUITests" */;
+			buildPhases = (
+				733570772A7C1405006CE3F2 /* Sources */,
+				733570782A7C1405006CE3F2 /* Frameworks */,
+				733570792A7C1405006CE3F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7335707D2A7C1405006CE3F2 /* PBXTargetDependency */,
+			);
+			name = NationalParksUITests;
+			productName = NationalParksUITests;
+			productReference = 7335707B2A7C1405006CE3F2 /* NationalParksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		733570592A7C1403006CE3F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					733570602A7C1403006CE3F2 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					733570702A7C1405006CE3F2 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 733570602A7C1403006CE3F2;
+					};
+					7335707A2A7C1405006CE3F2 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 733570602A7C1403006CE3F2;
+					};
+				};
+			};
+			buildConfigurationList = 7335705C2A7C1403006CE3F2 /* Build configuration list for PBXProject "NationalParks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 733570582A7C1403006CE3F2;
+			packageReferences = (
+				7335709C2A83BAC4006CE3F2 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				733570A52A852E44006CE3F2 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
+			productRefGroup = 733570622A7C1403006CE3F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				733570602A7C1403006CE3F2 /* NationalParks */,
+				733570702A7C1405006CE3F2 /* NationalParksTests */,
+				7335707A2A7C1405006CE3F2 /* NationalParksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7335705F2A7C1403006CE3F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7335706C2A7C1405006CE3F2 /* Preview Assets.xcassets in Resources */,
+				733570692A7C1405006CE3F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7335706F2A7C1405006CE3F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		733570792A7C1405006CE3F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7335705D2A7C1403006CE3F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733570A22A83DCE8006CE3F2 /* ParkRow.swift in Sources */,
+				733570A42A83FB66006CE3F2 /* ParkDetails.swift in Sources */,
+				733570672A7C1403006CE3F2 /* ContentView.swift in Sources */,
+				733570932A7C15AE006CE3F2 /* ParkService_API.swift in Sources */,
+				733570992A7D2CA7006CE3F2 /* ParkService_APICalls.swift in Sources */,
+				733570652A7C1403006CE3F2 /* NationalParksApp.swift in Sources */,
+				7335709B2A814818006CE3F2 /* ParkService_ParkData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7335706D2A7C1405006CE3F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733570762A7C1405006CE3F2 /* NationalParksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		733570772A7C1405006CE3F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733570822A7C1405006CE3F2 /* NationalParksUITestsLaunchTests.swift in Sources */,
+				733570802A7C1405006CE3F2 /* NationalParksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		733570732A7C1405006CE3F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 733570602A7C1403006CE3F2 /* NationalParks */;
+			targetProxy = 733570722A7C1405006CE3F2 /* PBXContainerItemProxy */;
+		};
+		7335707D2A7C1405006CE3F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 733570602A7C1403006CE3F2 /* NationalParks */;
+			targetProxy = 7335707C2A7C1405006CE3F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		733570832A7C1405006CE3F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		733570842A7C1405006CE3F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		733570862A7C1405006CE3F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NationalParks/Preview Content\"";
+				DEVELOPMENT_TEAM = XU3WHP6N66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hoffman.jon.NationalParks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		733570872A7C1405006CE3F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NationalParks/Preview Content\"";
+				DEVELOPMENT_TEAM = XU3WHP6N66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hoffman.jon.NationalParks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		733570892A7C1405006CE3F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XU3WHP6N66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hoffman.jon.NationalParksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NationalParks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NationalParks";
+			};
+			name = Debug;
+		};
+		7335708A2A7C1405006CE3F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XU3WHP6N66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hoffman.jon.NationalParksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NationalParks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NationalParks";
+			};
+			name = Release;
+		};
+		7335708C2A7C1405006CE3F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XU3WHP6N66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hoffman.jon.NationalParksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NationalParks;
+			};
+			name = Debug;
+		};
+		7335708D2A7C1405006CE3F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XU3WHP6N66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hoffman.jon.NationalParksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NationalParks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7335705C2A7C1403006CE3F2 /* Build configuration list for PBXProject "NationalParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				733570832A7C1405006CE3F2 /* Debug */,
+				733570842A7C1405006CE3F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		733570852A7C1405006CE3F2 /* Build configuration list for PBXNativeTarget "NationalParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				733570862A7C1405006CE3F2 /* Debug */,
+				733570872A7C1405006CE3F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		733570882A7C1405006CE3F2 /* Build configuration list for PBXNativeTarget "NationalParksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				733570892A7C1405006CE3F2 /* Debug */,
+				7335708A2A7C1405006CE3F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7335708B2A7C1405006CE3F2 /* Build configuration list for PBXNativeTarget "NationalParksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7335708C2A7C1405006CE3F2 /* Debug */,
+				7335708D2A7C1405006CE3F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7335709C2A83BAC4006CE3F2 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		733570A52A852E44006CE3F2 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7335709D2A83BAC4006CE3F2 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7335709C2A83BAC4006CE3F2 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+		733570A62A852E44006CE3F2 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 733570A52A852E44006CE3F2 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 733570592A7C1403006CE3F2 /* Project object */;
+}
